@@ -101,3 +101,50 @@ namespace _03._Calculations
 //    }
 //}
 
+//using System;
+
+//namespace _03._Calculations
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            string command = Console.ReadLine();
+//            int a = int.Parse(Console.ReadLine());
+//            int b = int.Parse(Console.ReadLine());
+
+//            switch (command)
+//            {
+//                case "add":
+//                    PrintAdd(a, b);
+//                    break;
+//                case "multiply":
+//                    PrintMultiply(a, b);
+//                    break;
+//                case "subtract":
+//                    PrintSubtract(a, b);
+//                    break;
+//                case "divide":
+//                    PrintDivide(a, b);
+//                    break;
+//            }
+//        }
+
+//        static void PrintAdd(int a, int b)
+//        {
+//            Console.WriteLine(a + b);
+//        }
+//        static void PrintMultiply(int a, int b)
+//        {
+//            Console.WriteLine(a * b);
+//        }
+//        static void PrintSubtract(int a, int b)
+//        {
+//            Console.WriteLine(a - b);
+//        }
+//        static void PrintDivide(int a, int b)
+//        {
+//            Console.WriteLine(a / b);
+//        }
+//    }
+//}
