@@ -67,7 +67,6 @@ namespace _03._Calculations
 //            if (comand == "add")
 //            {
 //                Console.WriteLine(PrintResultOfAdd(firstNum, secondNum));
-
 //            }
 //            else if (comand == "multiply")
 //            {
