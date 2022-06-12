@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _02._Grades
 {
@@ -20,11 +20,11 @@ namespace _02._Grades
             {
                 Console.WriteLine("Poor");
             }
-            else if (grade >= 5.50 && grade <= 5.49)
+            else if (grade >= 3.50 && grade <= 4.49)
             {
                 Console.WriteLine("Good");
             }
-            else if (grade >= 3.50 && grade <= 4.49)
+            else if (grade >= 4.50 && grade <= 5.49)
             {
                 Console.WriteLine("Very good");
             }
