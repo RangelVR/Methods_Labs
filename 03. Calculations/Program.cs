@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _03._Calculations
 {
@@ -7,50 +7,45 @@ namespace _03._Calculations
         static void Main(string[] args)
         {
             string command = Console.ReadLine();
-            int num1 = int.Parse(Console.ReadLine());
-            int num2 = int.Parse(Console.ReadLine());
-            int result = 0;
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
 
-            if (command == "add")
+            switch (command)
             {
-                PrintAdd(num1, num2, result);
-            }
-            else if (command == "multiply")
-            {
-                PrintMultiply(num1, num2, result);
-            }
-            else if (command == "subtract")
-            {
-                PrintSubtract(num1, num2, result);
-            }
-            else if (command == "divide")
-            {
-                PrintDivide(num1, num2, result);
+                case "add":
+                    PrintAdd(a, b);
+                    break;
+                case "multiply":
+                    PrintMultiply(a, b);
+                    break;
+                case "subtract":
+                    PrintSubtract(a, b);
+                    break;
+                case "divide":
+                    PrintDivide(a, b);
+                    break;
             }
         }
 
-        static void PrintAdd(int num1, int num2, int result)
+        static void PrintAdd(int a, int b)
         {
-            result = num1 + num2;
-            Console.WriteLine(result);
+            Console.WriteLine(a + b);
         }
-        static void PrintMultiply(int num1, int num2, int result)
+        static void PrintMultiply(int a, int b)
         {
-            result = num1 * num2;
-            Console.WriteLine(result);
+            Console.WriteLine(a * b);
         }
-        static void PrintSubtract(int num1, int num2, int result)
+        static void PrintSubtract(int a, int b)
         {
-            result = num1 - num2;
-            Console.WriteLine(result);
+            Console.WriteLine(a - b);
         }
-        static void PrintDivide(int num1, int num2, int result)
+        static void PrintDivide(int a, int b)
         {
-            result = num1 / num2;
-            Console.WriteLine(result);
+            Console.WriteLine(a / b);
         }
     }
 }
+
 
 //using System;
 
@@ -110,41 +105,47 @@ namespace _03._Calculations
 //        static void Main(string[] args)
 //        {
 //            string command = Console.ReadLine();
-//            int a = int.Parse(Console.ReadLine());
-//            int b = int.Parse(Console.ReadLine());
+//            int num1 = int.Parse(Console.ReadLine());
+//            int num2 = int.Parse(Console.ReadLine());
+//            int result = 0;
 
-//            switch (command)
+//            if (command == "add")
 //            {
-//                case "add":
-//                    PrintAdd(a, b);
-//                    break;
-//                case "multiply":
-//                    PrintMultiply(a, b);
-//                    break;
-//                case "subtract":
-//                    PrintSubtract(a, b);
-//                    break;
-//                case "divide":
-//                    PrintDivide(a, b);
-//                    break;
+//                PrintAdd(num1, num2, result);
+//            }
+//            else if (command == "multiply")
+//            {
+//                PrintMultiply(num1, num2, result);
+//            }
+//            else if (command == "subtract")
+//            {
+//                PrintSubtract(num1, num2, result);
+//            }
+//            else if (command == "divide")
+//            {
+//                PrintDivide(num1, num2, result);
 //            }
 //        }
 
-//        static void PrintAdd(int a, int b)
+//        static void PrintAdd(int num1, int num2, int result)
 //        {
-//            Console.WriteLine(a + b);
+//            result = num1 + num2;
+//            Console.WriteLine(result);
 //        }
-//        static void PrintMultiply(int a, int b)
+//        static void PrintMultiply(int num1, int num2, int result)
 //        {
-//            Console.WriteLine(a * b);
+//            result = num1 * num2;
+//            Console.WriteLine(result);
 //        }
-//        static void PrintSubtract(int a, int b)
+//        static void PrintSubtract(int num1, int num2, int result)
 //        {
-//            Console.WriteLine(a - b);
+//            result = num1 - num2;
+//            Console.WriteLine(result);
 //        }
-//        static void PrintDivide(int a, int b)
+//        static void PrintDivide(int num1, int num2, int result)
 //        {
-//            Console.WriteLine(a / b);
+//            result = num1 / num2;
+//            Console.WriteLine(result);
 //        }
 //    }
 //}
