@@ -51,3 +51,54 @@ namespace _03._Calculations
         }
     }
 }
+
+//using System;
+
+//namespace Calculation
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            string comand = Console.ReadLine();
+//            double firstNum = double.Parse(Console.ReadLine());
+//            double secondNum = double.Parse(Console.ReadLine());
+
+//            if (comand == "add")
+//            {
+//                Console.WriteLine(PrintResultOfAdd(firstNum, secondNum));
+
+//            }
+//            else if (comand == "multiply")
+//            {
+//                Console.WriteLine(PrintResultOdMultiply(firstNum, secondNum));
+//            }
+//            else if (comand == "subtract")
+//            {
+//                Console.WriteLine(PrintResultOdSubtract(firstNum, secondNum));
+//            }
+//            else if (comand == "divide")
+//            {
+//                Console.WriteLine(PrintResultOdDivide(firstNum, secondNum));
+//            }
+
+//        }
+//        static double PrintResultOfAdd(double firsNumber, double secondNumber)
+//        {
+//            return firsNumber + secondNumber;
+//        }
+//        static double PrintResultOdMultiply(double firsNumber, double secondNumber)
+//        {
+//            return firsNumber * secondNumber;
+//        }
+//        static double PrintResultOdSubtract(double firsNumber, double secondNumber)
+//        {
+//            return firsNumber - secondNumber;
+//        }
+//        static double PrintResultOdDivide(double firsNumber, double secondNumber)
+//        {
+//            return firsNumber / secondNumber;
+//        }
+//    }
+//}
+
