@@ -32,27 +32,32 @@ namespace _04._Printing_Triangle
     }
 }
 
-    //class Program
-    //{
-    //    static void Main(string[] args)
-    //    {
-    //        int height = int.Parse(Console.ReadLine());
-    //        for (int i = 1; i < height; i++)
-    //        {
-    //            PrintLine(1, i);
-    //        }
-    //        for (int i = height; i >= 1; i--)
-    //        {
-    //            PrintLine(1, i);
-    //        }
+//using System;
 
-    //    }
-    //    static void PrintLine(int start, int end)
-    //    {
-    //        for (int i = start; i <= end; i++)
-    //        {
-    //            Console.Write(i + " ");
-    //        }
-    //        Console.WriteLine();
-    //    }
-    //}
+//namespace PrintTriangle
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int n = int.Parse(Console.ReadLine());
+//            for (int i = 0; i < n; i++)
+//            {
+//                PrintTriangle(1, i);
+//            }
+//            for (int i = n; i > 0; i--)
+//            {
+//                PrintTriangle(1, i);
+//            }
+//        }
+
+//        static void PrintTriangle(int start, int end) 
+//        {
+//            for (int i = start; i <= end; i++)
+//            {
+//                Console.Write(i + " ");
+//            }
+//            Console.WriteLine();
+//        }
+//    }
+//}
