@@ -18,3 +18,26 @@ namespace _06._Calculate_Rectangle_Area
         }
     }
 }
+
+
+//using System;
+
+//namespace CalculateRectangleArea
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            double height = double.Parse(Console.ReadLine());
+//            double width = double.Parse(Console.ReadLine());
+//            double area = GetRectAngleArea(height, width);
+//            Console.WriteLine(area);
+
+//        }
+
+//        static double GetRectAngleArea(double height, double width)
+//        {
+//            return height * width;
+//        }
+//    }
+//}
