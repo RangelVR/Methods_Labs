@@ -22,12 +22,12 @@ namespace _09._Greater_of_Two_Values
             }
             else if (input == "string")
             {
-                string a = Console.ReadLine().ToLower();
-                string b = Console.ReadLine().ToLower();
+                string a = Console.ReadLine();
+                string b = Console.ReadLine();
                 Console.WriteLine(GetMax(a, b));
             }
         }
-
+        
         static int GetMax(int a, int b)
         {
             if (a.CompareTo(b) > 0)
