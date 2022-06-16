@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _11._Math_operations
 {
@@ -6,16 +6,16 @@ namespace _11._Math_operations
     {
         static void Main(string[] args)
         {
-            int num1 = int.Parse(Console.ReadLine());
+            double num1 = double.Parse(Console.ReadLine());
             string operrator = Console.ReadLine(); 
-            int num2 = int.Parse(Console.ReadLine());
+            double num2 = double.Parse(Console.ReadLine());
 
             Console.WriteLine(PrintResult(num1, operrator, num2));
         }
 
-        static int PrintResult(int num1, string operrator, int num2 ) 
+        static double PrintResult(double num1, string operrator, double num2 ) 
         {
-            int sum = 0;
+            double sum = 0;
             switch (operrator)
             {
                 case "+":
