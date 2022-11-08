@@ -1,37 +1,40 @@
 using System;
+using System.Linq;
+using System.Text;
 
-namespace _02._Grades
+namespace MathPower
 {
     class Program
     {
         static void Main(string[] args)
         {
-            double grade = double.Parse(Console.ReadLine());
-            PrintEvaluation(grade);
+            double n = double.Parse(Console.ReadLine());
+            PrintGradeDefinition(n);
         }
 
-        static void PrintEvaluation(double grade)
+        static void PrintGradeDefinition(double n) 
         {
-            if (grade >= 2.00 && grade <= 2.99)
+            if (n < 3)
             {
                 Console.WriteLine("Fail");
             }
-            else if (grade >= 3.00 && grade <= 3.49)
+            else if (n >= 3 && n < 3.50)
             {
                 Console.WriteLine("Poor");
             }
-            else if (grade >= 3.50 && grade <= 4.49)
+            else if (n >= 3.50 && n < 4.50)
             {
                 Console.WriteLine("Good");
             }
-            else if (grade >= 4.50 && grade <= 5.49)
+            else if (n >= 4.50 && n < 5.50)
             {
                 Console.WriteLine("Very good");
             }
-            else if (grade >= 5.50 && grade <= 6.00)
+            else if (n >= 5.50 && n <= 6.00)
             {
                 Console.WriteLine("Excellent");
             }
         }
+       
     }
 }
