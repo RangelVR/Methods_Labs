@@ -1,43 +1,22 @@
-﻿using System;
+using System;
+using System.Linq;
+using System.Text;
 
-namespace _06._Calculate_Rectangle_Area
+namespace MathPower
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int a = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
 
-            PrintRectangleArea(a, b);
+            PrintAreaOfRectangle(a, b);
         }
 
-        static void PrintRectangleArea(int a, int b) 
+        static void PrintAreaOfRectangle(double a, double b) 
         {
             Console.WriteLine(a * b);
         }
     }
 }
-
-
-//using System;
-
-//namespace CalculateRectangleArea
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            double height = double.Parse(Console.ReadLine());
-//            double width = double.Parse(Console.ReadLine());
-//            double area = GetRectAngleArea(height, width);
-//            Console.WriteLine(area);
-
-//        }
-
-//        static double GetRectAngleArea(double height, double width)
-//        {
-//            return height * width;
-//        }
-//    }
-//}
