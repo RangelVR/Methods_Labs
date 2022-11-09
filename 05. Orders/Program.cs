@@ -1,8 +1,6 @@
 using System;
-using System.Linq;
-using System.Text;
 
-namespace MathPower
+namespace _05._Orders
 {
     class Program
     {
@@ -11,28 +9,56 @@ namespace MathPower
             string product = Console.ReadLine();
             int quantity = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"{PrintTotalSum(product, quantity):f2}");
+            PrintTotalPriceOfOrder(product, quantity);
         }
 
-        static double PrintTotalSum(string product, int quantity)
+        static void PrintTotalPriceOfOrder(string product, int quantity) 
         {
-            double totalSum = 0;
             switch (product)
             {
                 case "coffee":
-                    totalSum = quantity * 1.50;
+                    Console.WriteLine($"{(1.50 * quantity):f2}");
                     break;
                 case "water":
-                    totalSum = quantity * 1.00;
+                    Console.WriteLine($"{(1.00 * quantity):f2}");
                     break;
                 case "coke":
-                    totalSum = quantity * 1.40;
+                    Console.WriteLine($"{(1.40 * quantity):f2}");
                     break;
                 case "snacks":
-                    totalSum = quantity * 2.00;
+                    Console.WriteLine($"{(2.00 * quantity):f2}");
                     break;
             }
-            return totalSum;
         }
+
+
+        //static void Main(string[] args)
+        //{
+        //    string product = Console.ReadLine();
+        //    int quantity = int.Parse(Console.ReadLine());
+
+        //    Console.WriteLine($"{PrintTotalSum(product, quantity):f2}");
+        //}
+
+        //static double PrintTotalSum(string product, int quantity)
+        //{
+        //    double totalSum = 0;
+        //    switch (product)
+        //    {
+        //        case "coffee":
+        //            totalSum = quantity * 1.50;
+        //            break;
+        //        case "water":
+        //            totalSum = quantity * 1.00;
+        //            break;
+        //        case "coke":
+        //            totalSum = quantity * 1.40;
+        //            break;
+        //        case "snacks":
+        //            totalSum = quantity * 2.00;
+        //            break;
+        //    }
+        //    return totalSum;
+        //}
     }
 }
