@@ -43,7 +43,6 @@ namespace _07._Repeat_String
 //        static string RepeatString(string str, int n)
 //        {
 //            StringBuilder sb = new StringBuilder();
-
 //            for (int i = 0; i < n; i++)
 //            {
 //                sb.Append(str);
