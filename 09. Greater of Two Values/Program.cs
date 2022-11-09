@@ -1,67 +1,67 @@
-﻿using System;
+using System;
+using System.Text;
 
-namespace _09._Greater_of_Two_Values
+namespace MathPower
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string input = Console.ReadLine();
+            string type = Console.ReadLine();
 
-            if (input == "int")
+            if (type == "int")
             {
-                int a = int.Parse(Console.ReadLine());
-                int b = int.Parse(Console.ReadLine());
-                Console.WriteLine(GetMax(a, b));
+                int n1 = int.Parse(Console.ReadLine());
+                int n2 = int.Parse(Console.ReadLine());
+                Console.WriteLine(GetMaxInt(n1, n2));
             }
-            else if (input == "char")
+            else if (type == "char")
             {
-                char a = char.Parse(Console.ReadLine());
-                char b = char.Parse(Console.ReadLine());
-                Console.WriteLine(GetMax(a, b));
+                char ch1 = char.Parse(Console.ReadLine());
+                char ch2 = char.Parse(Console.ReadLine());
+                Console.WriteLine(GetMaxCahr(ch1, ch2));
             }
-            else if (input == "string")
+            else if (type == "string")
             {
-                string a = Console.ReadLine();
-                string b = Console.ReadLine();
-                Console.WriteLine(GetMax(a, b));
+                string str1 = Console.ReadLine();
+                string str2 = Console.ReadLine();
+                Console.WriteLine(GetMacString(str1, str2));
             }
         }
-        
-        static int GetMax(int a, int b)
+
+        static int GetMaxInt(int n1, int n2) 
         {
-            if (a.CompareTo(b) > 0)
+            if (n1.CompareTo(n2) > 0)
             {
-                return a;
+                return n1;
             }
             else
             {
-                return b;
+                return n2;
             }
         }
-        static char GetMax(char a, char b)
+        static char GetMaxCahr(char ch1, char ch2) 
         {
-            if (a.CompareTo(b) > 0)
+            if (ch1.CompareTo(ch2) > 0)
             {
-                return a;
+                return ch1;
             }
             else
             {
-                return b;
-            };
+                return ch2;
+            }
         }
-        static string GetMax(string a, string b)
+        static string GetMacString(string str1, string str2) 
         {
-            if (a.CompareTo(b) > 0)
+            if (str1.CompareTo(str2) > 0)
             {
-                return a;
+                return str1;
             }
             else
             {
-                return b;
+                return str2;
             }
         }
-        
 
     }
 }
