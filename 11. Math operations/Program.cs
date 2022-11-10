@@ -33,5 +33,35 @@ namespace _11._Math_operations
             }
             return sum;
         }
+        
+        //static void Main(string[] args)
+        //{
+        //    double n1 = double.Parse(Console.ReadLine());
+        //    char @operator = char.Parse(Console.ReadLine());
+        //    double n2 = double.Parse(Console.ReadLine());
+
+        //    GetResult(n1, @operator, n2);
+        //}
+
+        //static void GetResult(double n1, char @operator, double n2)
+        //{
+        //    switch (@operator)
+        //    {
+        //        case '*':
+        //            Console.WriteLine(n1 * n2);
+        //            break;
+        //        case '/':
+        //            Console.WriteLine(n1 / n2);
+        //            break;
+        //        case '+':
+        //            Console.WriteLine(n1 + n2);
+        //            break;
+        //        case '-':
+        //            Console.WriteLine(n1 - n2);
+        //            break;
+        //        default:
+        //            break;
+        //    }
+        //}
     }
 }
