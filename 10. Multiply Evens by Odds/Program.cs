@@ -1,71 +1,60 @@
-﻿using System;
-
 namespace _10._Multiply_Evens_by_Odds
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            string num = Console.ReadLine();
-            Console.WriteLine(PrintResult(num));
+            int number = Math.Abs(int.Parse(Console.ReadLine()));
+
+            GetSumOfEvenDigits(number);
+            GetSumOfOddDigits(number);
+            Console.WriteLine(GetMultipleOfEvenAndOdds(number));
         }
 
-        static int PrintResult(string num)
+
+        static int GetSumOfEvenDigits(int number)
         {
             int evenSum = 0;
-            int oddSum = 0;
-            for (int i = 0; i < num.Length; i++)
+
+            while (number > 0)
             {
-                int currNum = num[i] - '0';
-                if (num[i] == '-')
+                int n = 0;
+                n = number % 10;
+
+                if (n % 2 == 0)
                 {
-                    continue;
+                    evenSum += n;
                 }
-                else if (currNum % 2 == 0)
-                {
-                    evenSum += currNum;
-                }
-                else
-                {
-                    oddSum += currNum;
-                }
+
+                number /= 10;
             }
-            return evenSum * oddSum;
+            return evenSum;
         }
+
+        static int GetSumOfOddDigits(int number)
+        {
+            int oddSum = 0;
+
+            while (number > 0)
+            {
+                int n = 0;
+                n = number % 10;
+
+                if (n % 2 != 0)
+                {
+                    oddSum += n;
+                }
+
+                number /= 10;
+
+            }
+            return oddSum;
+        }
+
+        static int GetMultipleOfEvenAndOdds(int number)
+        {
+            return GetSumOfEvenDigits(number) * GetSumOfOddDigits(number);
+        }
+
     }
 }
-
-//using System;
-
-//namespace MathPower
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            int num = Math.Abs(int.Parse(Console.ReadLine()));
-//            Console.WriteLine(MultiplyEvenByOddsDigits(num));
-//        }
-
-//        static int MultiplyEvenByOddsDigits(int num) 
-//        {
-//            int sumEven = 0;
-//            int sumOdd = 0;
-//            while (num !=0)
-//            {
-//                int digit = num % 10;
-//                if (digit % 2 == 0)
-//                {
-//                    sumEven += digit;
-//                }
-//                else
-//                {
-//                    sumOdd += digit;
-//                }
-//                num = num / 10;
-//            }
-//            return sumEven * sumOdd;
-//        }
-
-//    }
-//}
