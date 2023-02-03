@@ -1,53 +1,77 @@
-﻿using System;
+using System.Text;
 
 namespace _07._Repeat_String
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            string str = Console.ReadLine();
+            string input = Console.ReadLine();
             int n = int.Parse(Console.ReadLine());
 
-            RepeatString(str, n);
+            PrintNtimesInput(input, n);
         }
 
-        static void RepeatString(string str, int n) 
+        static void PrintNtimesInput(string input, int n)
         {
             for (int i = 0; i < n; i++)
             {
-                Console.Write(str);
+                Console.Write(input);
             }
         }
     }
 }
 
-
-//using System;
 //using System.Text;
 
 //namespace _07._Repeat_String
 //{
-//    class Program
+//    internal class Program
 //    {
-//        public static object SrtingBuilder { get; private set; }
-
 //        static void Main(string[] args)
 //        {
-//            string str = Console.ReadLine();
+//            string input = Console.ReadLine();
 //            int n = int.Parse(Console.ReadLine());
 
-//            Console.WriteLine(RepeatString(str, n));
+//            PrintNtimesInput(input, n);
 //        }
 
-//        static string RepeatString(string str, int n)
+//        static void PrintNtimesInput(string input, int n)
 //        {
 //            StringBuilder sb = new StringBuilder();
+
 //            for (int i = 0; i < n; i++)
 //            {
-//                sb.Append(str);
+//                sb.Append(input);
 //            }
-//            return sb.ToString();
+
+//            Console.WriteLine(sb);
+//        }
+//    }
+//}
+
+//namespace _07._Repeat_String
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            string input = Console.ReadLine();
+//            int n = int.Parse(Console.ReadLine());
+
+//            PrintNtimesInput(input, n);
+//        }
+
+//        static void PrintNtimesInput(string input, int n)
+//        {
+//            string resultString = string.Empty;
+
+//            for (int i = 0; i < n; i++)
+//            {
+//                resultString += input;
+//            }
+
+//            Console.WriteLine(resultString);
 //        }
 //    }
 //}
