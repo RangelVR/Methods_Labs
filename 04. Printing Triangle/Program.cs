@@ -1,63 +1,70 @@
-﻿using System;
-
 namespace _04._Printing_Triangle
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            PrintTriangle(n);
+
+            for (int i = 1; i <= n; i++)
+            {
+                PrintTriangle(n, i);
+            }
+
+            for (int i = n - 1; i > 0; i--)
+            {
+                PrintTriangle(n, i);
+            }
+
         }
 
-        static void PrintTriangle(int n)
+        static void PrintTriangle(int n, int i)
         {
-            for (int i = 0; i <= n; i++)
+            for (int k = 1; k <= i; k++)
             {
-                for (int j = 1; j <= i; j++)
-                {
-                    Console.Write($"{j} ");
-                }
-                Console.WriteLine();
+                Console.Write("{0} ", k);
             }
-            for (int k = n - 1; k > 0; k--)
-            {
-                for (int q = 1; q <= k; q++)
-                {
-                    Console.Write($"{q} ");
-                }
-                Console.WriteLine();
-            }
+            Console.WriteLine();
         }
+
     }
 }
 
-//using System;
-
-//namespace PrintTriangle
+//namespace _04._Printing_Triangle
 //{
-//    class Program
+//    internal class Program
 //    {
 //        static void Main(string[] args)
 //        {
 //            int n = int.Parse(Console.ReadLine());
-//            for (int i = 0; i < n; i++)
-//            {
-//                PrintTriangle(1, i);
-//            }
-//            for (int i = n; i > 0; i--)
-//            {
-//                PrintTriangle(1, i);
-//            }
+
+//            PrintTriangle(n);
 //        }
 
-//        static void PrintTriangle(int start, int end) 
+//        static void PrintTriangle(int n)
 //        {
-//            for (int i = start; i <= end; i++)
+//            for (int i = 1; i <= n; i++)
 //            {
-//                Console.Write(i + " ");
+//                for (int k = 1; k <= i; k++)
+//                {
+//                    Console.Write(k + " ");
+//                }
+//                Console.WriteLine();
 //            }
-//            Console.WriteLine();
+
+//            GetSecondHalfOfTriangle(n);
+//        }
+
+//        static void GetSecondHalfOfTriangle(int n)
+//        {
+//            for (int i = n - 1; i > 0; i--)
+//            {
+//                for (int k = 1; k <= i; k++)
+//                {
+//                    Console.Write("{0} ", k);
+//                }
+//                Console.WriteLine();
+//            }
 //        }
 //    }
 //}
