@@ -1,40 +1,25 @@
-﻿using System;
-
 namespace _08._Math_Power
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            double num = double.Parse(Console.ReadLine());
-            double power = double.Parse(Console.ReadLine());
+            double @base = double.Parse(Console.ReadLine());
+            int power = int .Parse(Console.ReadLine());
 
-            PrintMathPower(num, power);
+            PrintResult(@base, power);
         }
 
-        static void PrintMathPower(double num, double power) 
+        static void PrintResult(double @base, int power)
         {
-            Console.WriteLine(Math.Pow(num, power));
+            double sum = 1; 
+
+            for (int i = 0; i < power; i++)
+            {
+                sum *= @base;
+            }
+
+            Console.WriteLine(sum);
         }
     }
 }
-
-//using System;
-
-//namespace MathPower
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            double num = double.Parse(Console.ReadLine());
-//            double power = double.Parse(Console.ReadLine());
-//            Console.WriteLine(PrintNumPow(num, power));
-
-//        }
-//        static double PrintNumPow(double num, double power)
-//        {
-//            return Math.Pow(num, power);
-//        }
-//    }
-//}
